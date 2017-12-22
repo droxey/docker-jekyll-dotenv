@@ -31,7 +31,10 @@ First, set your repository in `_config.yml` to match the repository of your GitH
    ```bash
    cp .env.sample .env && sed -i .bak 's/GH_TOKEN_REPLACE/[PASTE TOKEN HERE!]/' .env
    ```
-   Using `0jcdahcl66mvmyahj68xngnug0db19y2xvdm1zlb` as an example: `sed -i .bak 's/GH_TOKEN_REPLACE/0jcdahcl66mvmyahj68xngnug0db19y2xvdm1zlb/' .env`
+   Using `0jcdahcl66mvmyahj68xngnug0db19y2xvdm1zlb` as an example: 
+   ```bash
+   sed -i .bak 's/GH_TOKEN_REPLACE/0jcdahcl66mvmyahj68xngnug0db19y2xvdm1zlb/' .env
+   ```
 
 ### 3. Starting the Container
 
@@ -51,4 +54,4 @@ In Terminal, run the following command in the project root to stop the Jekyll se
 docker-compose down
 ```
 
-### 5. Add, Commit, and Push Local Changes to GitHub!
+### 5. Add, Commit, and Push Local Changes to `gh-pages`!
