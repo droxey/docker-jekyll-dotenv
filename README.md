@@ -1,12 +1,18 @@
 # docker-jekyll-dotenv
 
 Generate static GitHub Pages without exposing environment variables, API keys, etc.
-
-## Docker? Jekyll is written in Ruby, right?
+[## Docker? Jekyll is written in Ruby, right?
 
 Docker allows us to configure ruby, Jekyll, and it's associated requirements once, then run or deploy the resulting container anywhere, in a platform agnostic fashion. We can then run this container locally for development, ultimately leveraging the container to build our static site and deploy it to GitHub.
 
 ## Setup
+
+### 0. Prerequisites
+
+1. Install Docker: <https://docs.docker.com/engine/installation/>
+   **NOTE: Docker's macOS build includes support for docker-compose.**
+1. (Windows, Linux) Install Docker Compose: <https://docs.docker.com/compose/install/>
+   **NOTE: Only Windows and Linux host systems require a separate installation!**
 
 ### 1. Edit Configuration
 
