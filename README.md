@@ -1,7 +1,8 @@
 # docker-jekyll-dotenv
 
 Generate static GitHub Pages without exposing environment variables, API keys, etc.
-[## Docker? Jekyll is written in Ruby, right?
+
+## Docker? Jekyll is written in Ruby, right?
 
 Docker allows us to configure ruby, Jekyll, and it's associated requirements once, then run or deploy the resulting container anywhere, in a platform agnostic fashion.
 This provides an easily replicable environment, instantly capable of the following workflows out of the box:
