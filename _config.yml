@@ -1,6 +1,7 @@
 repository: your/repo
 
 gems:
+- dotenv
 - jekyll-github-metadata
 - jekyll-mentions
 - jekyll-redirect-from
