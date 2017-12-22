@@ -17,6 +17,7 @@
           <div class="container">
             <h1 class="display-3">.env hello world</h1>
             <p class="lead">DEMO_VAR: {{ site.demo_var }}</p>
+            {% for item in site %} {{ item[0] }}: {{ item[1] }} {% endfor %}
           </div>
         </div>
       </div>
