@@ -1,7 +1,12 @@
 app:
   build: .
+  container_name: jekyll-docker
   ports:
     - '4000:4000'
   volumes:
     - .:/usr/src/app
   env_file: .env
+  hostname: jekyll
+  environment:
+    - SHELL=/bin/bash
+    - DEMO_VAR=${DEMO_VAR}

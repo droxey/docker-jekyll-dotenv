@@ -1,2 +1,24 @@
-FROM starefossen/github-pages:onbuild
-RUN ruby -S gem install dotenv-rails
+FROM starefossen/ruby-node:2-6-alpine
+
+ENV JSON_GEM_VERSION 1.8.6
+ENV GITHUB_GEM_VERSION 172
+
+RUN apk --update add --virtual build_deps \
+    build-base ruby-dev libc-dev linux-headers \
+    && gem install --verbose --no-document \
+    json:${JSON_GEM_VERSION} \
+    github-pages:${GITHUB_GEM_VERSION} \
+    jekyll-github-metadata \
+    minitest \
+    dotenv-rails \
+    && apk del build_deps \
+    && apk add git \
+    && mkdir -p /usr/src/app \
+    && rm -rf /usr/lib/ruby/gems/*/cache/*.gem
+
+WORKDIR /usr/src/app
+EXPOSE 4000 80
+
+ENV DEMO_VAR WAT
+COPY docker-entrypoint.sh /
+ENTRYPOINT ["/docker-entrypoint.sh"]
