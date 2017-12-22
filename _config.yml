@@ -6,3 +6,7 @@ plugins:
 - jekyll-redirect-from
 - jekyll-sitemap
 - jemoji
+
+# Custom environment variables.
+# Available site-wide.
+demo_var: ENV_DEMO_VAR
