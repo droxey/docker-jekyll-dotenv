@@ -4,8 +4,7 @@ require 'dotenv'
 module Jekyll
   class EnvironmentVariablesGenerator < Generator
     def generate(site)
-      # NOTE: Assigning to ENV will not work in liquid templates
-      # must iterate through the keys & values and build a new map
+      # Load up .env variables.
       site.config['env'] = Dotenv.load('.env')
       print 'dotenv variables: '
       print site.config['env']

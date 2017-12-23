@@ -8,5 +8,8 @@ app:
   env_file: .env
   hostname: jekyll
   environment:
+    # Default to /bin/bash instead of /bin/sh
     - SHELL=/bin/bash
+    # Setting a sample variable without commiting it's key.
+    # This will be passed to the Dockerfile.
     - DEMO_VAR=${DEMO_VAR}

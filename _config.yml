@@ -8,5 +8,5 @@ plugins:
 - jemoji
 
 # Custom environment variables.
-# Available site-wide.
+# Available site-wide as site.demo_var.
 demo_var: ENV_DEMO_VAR
