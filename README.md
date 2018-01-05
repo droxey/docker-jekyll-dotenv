@@ -17,29 +17,25 @@ This provides an easily replicable environment, instantly capable of the followi
 
 1. Install Docker: <https://docs.docker.com/engine/installation/>
 
-1. Add `.env` File:
-
 1. Generate a GitHub Token by navigating to <https://github.com/settings/tokens/new> in your browser and generate a token.
 
-   1. In Terminal, in the root project directory, run:
+1. Add your secrets to your `.env` file. `JEKYLL_GITHUB_TOKEN` is a required secret:
 
-1) Add your secrets to your `.env` file. `JEKYLL_GITHUB_TOKEN` is a required secret:
+   ```bash
+   echo 'JEKYLL_GITHUB_TOKEN=[REPLACE_WITH_TOKEN]' >> .env
+   ```
 
-```bash
-echo 'JEKYLL_GITHUB_TOKEN=[REPLACE_WITH_TOKEN]' >> .env
-```
+   Using `0jcdahcl66mvmyahj68xngnug0db19y2xvdm1zlb` as an example:
 
-Using `0jcdahcl66mvmyahj68xngnug0db19y2xvdm1zlb` as an example:
-
-```bash
-echo 'JEKYLL_GITHUB_TOKEN=0jcdahcl66mvmyahj68xngnug0db19y2xvdm1zlb' >> .env
-```
+   ```bash
+   echo 'JEKYLL_GITHUB_TOKEN=0jcdahcl66mvmyahj68xngnug0db19y2xvdm1zlb' >> .env
+   ```
 
 1. **OPTIONAL:** Add additional secrets by running this line in your project directory:
 
-```bash
-echo 'DEMO_VAR=super secret value' >> .env
-```
+   ```bash
+   echo 'DEMO_VAR=super secret value' >> .env
+   ```
 
 1. **OPTIONAL: New Repos** - Create a Repository for your GitHub Page:
 
