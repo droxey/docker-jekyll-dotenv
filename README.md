@@ -13,11 +13,11 @@ This provides an easily replicable environment, instantly capable of the followi
 
 ## Installation
 
-### Base Prerequisites
+### 1. Base Prerequisites
 
 1. Install Docker: <https://docs.docker.com/engine/installation/>
 
-1. Generate a GitHub Token by navigating to <https://github.com/settings/tokens/new> in your browser and generate a token.
+1. Generate a GitHub Token by navigating to <https://github.com/settings/tokens/new> in your browser and generating a new token.
 
 1. Add your secrets to your `.env` file. `JEKYLL_GITHUB_TOKEN` is a required secret:
 
@@ -48,7 +48,7 @@ This provides an easily replicable environment, instantly capable of the followi
 
 1. **OPTIONAL** Copy the contents of the `.gitignore` file [in this repository](https://raw.githubusercontent.com/outputs-io/docker-jekyll-dotenv/master/.gitignore) to your new repository.
 
-### Quickstart
+### 2. Quickstart (Common)
 
 Simply run:
 
@@ -56,7 +56,7 @@ Simply run:
 docker run --rm outputsio/docker-jekyll-dotenv
 ```
 
-### Connect Your New Repository
+### 3. Connect Repository
 
 **IMPORTANT**: _These steps must only be executed once per repository._
 
@@ -68,7 +68,7 @@ docker run --rm outputsio/docker-jekyll-dotenv
 
 1. Save `_config.yml` --- your project is now officially configured!
 
-### Pushing Changes to GitHub Pages
+### 4. Push Changes
 
 1. Add all changes to git:
 
