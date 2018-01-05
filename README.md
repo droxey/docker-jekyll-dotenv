@@ -24,7 +24,7 @@ This provides an easily replicable environment, instantly capable of the followi
 
 1. Navigate to your repository's settings to enable GitHub Pages. This will create an additional branch named `gh-pages` in your repository.
 
-1. Generate a GitHub Token by navigating to <https://github.com/settings/tokens/new> in your browser and generating a new token.
+1. Generate a [new GitHub Token](https://github.com/settings/tokens/new).
 
 1. Checkout the `gh-pages` branch locally:
 
@@ -33,7 +33,7 @@ This provides an easily replicable environment, instantly capable of the followi
    git checkout gh-pages
    ```
 
-1. Add your secrets to your `.env` file. `JEKYLL_GITHUB_TOKEN` is a required secret:
+1. Add your secrets to your `.env` file. If `.env` does not yet exist in your project directory, the below command will create it automatically. Lets add the required secret, `JEKYLL_GITHUB_TOKEN`:
 
    ```bash
    echo 'JEKYLL_GITHUB_TOKEN=[REPLACE_WITH_TOKEN]' >> .env
