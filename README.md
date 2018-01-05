@@ -25,7 +25,7 @@ This provides an easily replicable environment, instantly capable of the followi
 1. Clone the fork to your local machine.
 1. In Terminal, navigate to the repo directory on your local machine.
 
-### 3. Step by Step
+### 3. Configuration Step by Step
 
 1. Generate a [new GitHub Token](https://github.com/settings/tokens/new).
 
