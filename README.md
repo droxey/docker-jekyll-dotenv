@@ -55,23 +55,25 @@ This provides an easily replicable environment, instantly capable of the followi
 
 1. Save `_config.yml` --- your project is now fully configured for development!
 
-1. **Start the Container to Begin Development**:
+### 4. Develop Locally
 
-   In Terminal, run the following command in the project root to start Jekyll:
+* **Start the Container to Begin Development**:
 
-   ```bash
-   docker-compose up
-   ```
+  In Terminal, run the following command in the project root to start Jekyll:
 
-   Once the server starts, simply visit <http://localhost:4000> in your browser. Live reload is enabled in this container, so any changes made as you develop will instantly reflect in your browser.
+  ```bash
+  docker-compose up
+  ```
 
-1. **Stop the Container to Conclude Development**:
+  Once the server starts, simply visit <http://localhost:4000> in your browser. Live reload is enabled in this container, so any changes made as you develop will instantly reflect in your browser.
 
-   In Terminal, run the following command in the project root to stop the Jekyll server:
+* **Stop the Container to Conclude Development**:
 
-   ```bash
-   docker-compose down
-   ```
+  In Terminal, run the following command in the project root to stop the Jekyll server:
+
+  ```bash
+  docker-compose down
+  ```
 
 ### 5. Push Changes
 
