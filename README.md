@@ -17,7 +17,21 @@ This provides an easily replicable environment, instantly capable of the followi
 
 1. Install Docker: <https://docs.docker.com/engine/installation/>
 
+1. **OPTIONAL: New Repos** - Create a Repository for your GitHub Page:
+
+   1. Navigate to <https://github.com/new> in your browser.
+   1. Clone the new repository to your local machine.
+
+1. Navigate to your repository's settings to enable GitHub Pages. This will create an additional branch named `gh-pages` in your repository.
+
 1. Generate a GitHub Token by navigating to <https://github.com/settings/tokens/new> in your browser and generating a new token.
+
+1. Checkout the `gh-pages` branch locally:
+
+   ```bash
+   git fetch origin
+   git checkout gh-pages
+   ```
 
 1. Add your secrets to your `.env` file. `JEKYLL_GITHUB_TOKEN` is a required secret:
 
@@ -36,15 +50,6 @@ This provides an easily replicable environment, instantly capable of the followi
    ```bash
    echo 'DEMO_VAR=super secret value' >> .env
    ```
-
-1. **OPTIONAL: New Repos** - Create a Repository for your GitHub Page:
-
-   1. Navigate to <https://github.com/new> in your browser.
-   1. Clone the new repository to your local machine.
-
-1. Navigate to your repository's settings to enable GitHub Pages. This will create an additional branch named `gh-pages` in your repository.
-
-1. Checkout the `gh-pages` branch.
 
 1. **OPTIONAL** Copy the contents of the `.gitignore` file [in this repository](https://raw.githubusercontent.com/outputs-io/docker-jekyll-dotenv/master/.gitignore) to your new repository.
 
